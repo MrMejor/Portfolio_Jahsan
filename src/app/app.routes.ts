@@ -4,5 +4,6 @@ import { ConfirmationComponent } from './components/confirmation/confirmation.co
 
 
 export const routes: Routes = [
-    { path: 'about', component: AboutComponent }
+    { path: 'about', component: AboutComponent },
+    { path: 'confirmation', component: ConfirmationComponent }
 ];

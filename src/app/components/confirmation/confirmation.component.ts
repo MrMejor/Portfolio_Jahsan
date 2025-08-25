@@ -1,17 +1,16 @@
 import { Component } from '@angular/core';
-import { Location } from '@angular/common';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-confirmation',
   standalone: true,
-  imports: [],
+  imports: [MatCardModule, MatButtonModule], // <-- add Material modules here
   templateUrl: './confirmation.component.html',
-  styleUrl: './confirmation.component.scss'
+  styleUrls: ['./confirmation.component.scss'],
 })
 export class ConfirmationComponent {
-    constructor(private location: Location) {}
-
-  goBack(): void {
-    this.location.back();
+  goBack() {
+    window.history.back();
   }
 }
