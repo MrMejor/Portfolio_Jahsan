@@ -3,11 +3,10 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
-  selector: 'app-confirmation',
-  standalone: true,
-  imports: [MatCardModule, MatButtonModule], // <-- add Material modules here
-  templateUrl: './confirmation.component.html',
-  styleUrls: ['./confirmation.component.scss'],
+    selector: 'app-confirmation',
+    imports: [MatCardModule, MatButtonModule], // <-- add Material modules here
+    templateUrl: './confirmation.component.html',
+    styleUrls: ['./confirmation.component.scss']
 })
 export class ConfirmationComponent {
   goBack() {
